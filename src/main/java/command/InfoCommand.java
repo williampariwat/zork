@@ -1,4 +1,7 @@
 package command;
 
-public class infoCommand {
+public class InfoCommand implements Command{
+    public void execute(String s) {
+
+    }
 }
