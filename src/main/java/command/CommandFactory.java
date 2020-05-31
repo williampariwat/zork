@@ -28,4 +28,5 @@ public class CommandFactory {
     public static Command getCommand(String cmd){
         return (commandMap.get(cmd));
     }
+
 }

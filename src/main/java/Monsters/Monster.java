@@ -18,7 +18,7 @@ public abstract class Monster {
     public boolean isAlive(){
         return alive;
     }
-    
+
 
     public void setDead(){
         alive = false;

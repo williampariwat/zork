@@ -1,3 +1,7 @@
+import Items.Items;
+import Player.Health;
+import Room.Room;
+import Items.Inventory;
 import command.Command;
 import command.CommandFactory;
 import command.Introduction;
@@ -5,25 +9,29 @@ import command.Introduction;
 import java.util.Scanner;
 
 public class Starter {
+    private Items item;
+    private Room currentRoom;
+    private Health health = new Health();
+
+    private Inventory inventory;
     public void Starter(){
         Scanner scanner = new Scanner(System.in);
 
         String cmd = "";
 
         Introduction welcome = new Introduction();
+
         welcome.shout();
 
-        while(!"exit".equals(cmd)){
+        while(true){
             System.out.println("> ");
-            cmd = scanner.next();
+            cmd = scanner.nextLine();
             String[] words = cmd.split(" ");
 
             Command command = CommandFactory.getCommand(words[0]);
 
             if (command != null){
-                if(words.length == 1){
-                    command.execute(words.length == 1 ? null : words[1]);
-                }
+                command.execute(words.length == 1 ? null : words[1]);
             }
         }
     }
