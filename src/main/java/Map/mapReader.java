@@ -10,14 +10,13 @@ import java.util.Scanner;
 public class mapReader {
 
     String fileName;
-    private HashMap<String, Room> roomMap;
+    private HashMap<String, Room> roomMap = new HashMap<String, Room>();
 
     public mapReader(String fileName){
         this.fileName  = fileName;
     }
 
     public void mapInitializer(String fileName){
-        roomMap = new HashMap<String, Room>();
         Scanner scanRoom;
         try{
             HashMap<String, HashMap<String,String>> exits = new HashMap<String, HashMap<String, String>>();
@@ -59,8 +58,12 @@ public class mapReader {
             e.printStackTrace();
         } catch (Exception e) {
             e.printStackTrace();
-        }
+            }
+
 
     }
+
+    public Room getRoomMap(String room){
+        return roomMap.get(room);
 
 }

@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a727ee5-05d7-44da-879b-fd8e3b97c5b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Items/Inventory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Items/Items.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Map/loadMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Map/mapReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Player/FoodBar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Player/Health.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Player/Hungerlevel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Room/Room.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Map/createMap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Monsters/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Monsters/Monster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Starter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Starter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/CommandFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/CommandFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/GoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/GoCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/HelpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/HelpCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/Introduction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/Introduction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Map/loadMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Map/LoadMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Map/mapReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Map/mapReader.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +84,7 @@
       <workItem from="1590777277851" duration="104000" />
       <workItem from="1590778380586" duration="3567000" />
       <workItem from="1590913320829" duration="16000" />
-      <workItem from="1590913359471" duration="4561000" />
+      <workItem from="1590913359471" duration="5765000" />
     </task>
     <servers />
   </component>
