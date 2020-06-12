@@ -1,3 +1,5 @@
+package Starter;
+
 import command.Command;
 import command.CommandFactory;
 

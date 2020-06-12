@@ -1,7 +1,15 @@
 package command;
 
-public class Introduction {
+import Player.PlayerHealth;
+import Room.Room;
 
+public class Introduction {
+    private PlayerHealth health;
+    private Room currentRoom;
+    public Introduction(PlayerHealth health, Room currentRoom){
+        this.health = health;
+        this.currentRoom = currentRoom;
+    }
     public void shout() {
         System.out.println();
         System.out.println("Welcome to Zork.");
@@ -10,8 +18,8 @@ public class Introduction {
         System.out.println("You must be in the ...... to submit your final answer.");
         System.out.println();
         System.out.println("You will begin /// in the ///. Good luck.");
-//        health.getHungerBar();
-//        System.out.println(currentRoom.longDescription());
+        health.getFoodBar();
+        System.out.println(currentRoom.longDescription());
     }
 
 }

@@ -29,4 +29,7 @@ public class CommandFactory {
         return (commandMap.get(cmd));
     }
 
+    public static Map<String, Command> getMap(){
+        return commandMap;
+    }
 }

@@ -30,6 +30,8 @@ public class LoadMap {
         try{
             mapRead = new mapReader(filePath);
             currentRoom = mapRead.getRoomMap(start);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 }

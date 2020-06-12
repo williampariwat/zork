@@ -2,15 +2,19 @@ package Room;
 
 
 import Items.Items;
+import Monsters.Monster;
 
+import java.lang.reflect.Array;
 import java.util.*;
 
 public class Room {
     private Items item;
     private String roomName;
     private String description;
+    private Monster monster;
 
     private ArrayList<Items> itemList;
+    private ArrayList<Monster> monstersList;
     private HashMap<String, Room> exits;
 
     public Room(String description){
@@ -23,6 +27,7 @@ public class Room {
         description = "DEFAULT DESCRIPTION";
         itemList = new ArrayList<Items>();
         exits = new HashMap<String, Room>();
+        monstersList = new ArrayList<Monster>();
     }
 
     public void setExit(char direction, Room r) throws Exception {
@@ -82,6 +87,11 @@ public class Room {
         this.roomName = roomName;
     }
 
+    public void getItems(){
+        System.out.println("In this room, you found....");
+        System.out.println(this.itemList.toString());
+    }
+
     public String getDescription(){
         return description;
     }
@@ -105,6 +115,19 @@ public class Room {
             }
         }
         this.itemList = realList;
+    }
+
+    public void setRoomMonster(String[] monsters){
+        List<String> stringMonsters = Arrays.asList(monsters);
+        ArrayList<Monster> realList = new ArrayList<Monster>(stringMonsters.size());
+        for(int i = 0; i < realList.size(); i++){
+            if(stringMonsters.get(i).equals("none")){
+                i++;
+            }else{
+                realList.add(monster.stringToMonster(stringMonsters.get(i)));
+            }
+        }
+        this.monstersList = realList;
     }
 
 

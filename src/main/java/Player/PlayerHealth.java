@@ -1,11 +1,11 @@
 package Player;
 
-public class Health
+public class PlayerHealth
 {
     private Hungerlevel hungerLevel;
     private int healthBar;
 
-    public Health(){
+    public PlayerHealth(){
         hungerLevel = new Hungerlevel();
         healthBar = 100;
     }

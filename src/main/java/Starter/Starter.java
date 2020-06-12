@@ -1,5 +1,7 @@
+package Starter;
+
 import Items.Items;
-import Player.Health;
+import Player.PlayerHealth;
 import Room.Room;
 import Items.Inventory;
 import command.Command;
@@ -11,7 +13,7 @@ import java.util.Scanner;
 public class Starter {
     private Items item;
     private Room currentRoom;
-    private Health health = new Health();
+    private PlayerHealth health = new PlayerHealth();
 
     private Inventory inventory;
     public void Starter(){
@@ -34,5 +36,9 @@ public class Starter {
                 command.execute(words.length == 1 ? null : words[1]);
             }
         }
+    }
+
+    public Room getCurrentRoom(){
+        return currentRoom;
     }
 }
