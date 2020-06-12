@@ -2,21 +2,21 @@ package Player;
 
 public class Health
 {
-    private FoodBar f;
+    private Hungerlevel hungerLevel;
     private int healthBar;
 
     public Health(){
-        f = new FoodBar();
+        hungerLevel = new Hungerlevel();
         healthBar = 100;
     }
 
-    public FoodBar getFoodBar(){
-        return f;
+    public Hungerlevel getFoodBar(){
+        return hungerLevel;
     }
 
     public boolean decrease(){
-        f.decrease();
-        return f.decrease();
+        hungerLevel.decrease();
+        return hungerLevel.decrease();
     }
 
     public void attacked(int damage){

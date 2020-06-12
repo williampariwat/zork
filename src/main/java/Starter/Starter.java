@@ -19,7 +19,7 @@ public class Starter {
 
         String cmd = "";
 
-        Introduction welcome = new Introduction();
+        Introduction welcome = new Introduction(health,currentRoom);
 
         welcome.shout();
 

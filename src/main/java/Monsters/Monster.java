@@ -3,33 +3,16 @@ package Monsters;
 import javax.xml.stream.Location;
 import java.util.Random;
 
-public abstract class Monster {
+public abstract class MonsterHealth {
 
-    protected static final Random RANDOM = new Random();
 
-    private Integer[] location;
-
-    private int HP = 100;
+    private int healthBar = 100;
 
     private int attackDamage;
+    private String MonsterName;
+    
 
-    private boolean alive = true;
-
-    public boolean isAlive(){
-        return alive;
-    }
-
-
-    public void setDead(){
-        alive = false;
-        if(location != null){
-            location = null;
-            HP = 100;
-        }
-    }
-
-    public void initialize(Location location){
-        setLocation(location);
+    public void Monster(String name, String i\){
         setAttackDamage();
     }
 
