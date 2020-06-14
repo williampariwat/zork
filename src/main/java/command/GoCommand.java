@@ -21,10 +21,8 @@ public class GoCommand implements Command {
             System.out.println("This is the end of the map");
         }else{
             currentRoom = nextRoom;
-            System.out.println(currentRoom.longDescription());
-            currentRoom.getItems();
-            //Monster
-            //See inventory
+//            System.out.println(currentRoom.longDescription());
+            currentRoom.getMonsters();
         }
     }
 }

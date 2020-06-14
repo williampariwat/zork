@@ -1,8 +1,6 @@
 package Monsters;
 
-import javax.xml.stream.Location;
 import java.util.ArrayList;
-import java.util.Random;
 
 public class Monster {
 
@@ -24,7 +22,7 @@ public class Monster {
 
     public void removeMonster(Monster monster, ArrayList<Monster> allMonsters){
         for(int i = 0; i < allMonsters.size(); i++){
-            if(allMonsters.get(i).equals(monster){
+            if(allMonsters.get(i).equals(monster)){
                 allMonsters.remove(i);
             }
         }
@@ -37,6 +35,10 @@ public class Monster {
             return false;
         }
     }
+    public void attacked(int damage){
+        healthBar = healthBar - damage;
+    }
+
 
     public Monster stringToMonster(String string){
         Monster monster;
@@ -48,8 +50,8 @@ public class Monster {
         }
     }
 
-    boolean isDead(Monster monster){
-        return monster.healthBar < 100;
+    public boolean isDead(){
+        return this.healthBar < 100;
     }
 
 

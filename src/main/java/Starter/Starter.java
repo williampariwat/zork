@@ -1,27 +1,30 @@
 package Starter;
 
 import Items.Items;
-import Player.PlayerHealth;
+import Player.Player;
 import Room.Room;
 import Items.Inventory;
 import command.Command;
 import command.CommandFactory;
 import command.Introduction;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Starter {
-    private Items item;
-    private Room currentRoom;
-    private PlayerHealth health = new PlayerHealth();
+    public Items item;
+    public Room currentRoom = new Room();
+    public Player player = new Player();
+    public Inventory inventory = new Inventory(); //FIx this 
+    public String name;
+    public ArrayList<Starter> listOfSave = new ArrayList<Starter>();
 
-    private Inventory inventory;
+
     public void Starter(){
         Scanner scanner = new Scanner(System.in);
-
         String cmd = "";
-
-        Introduction welcome = new Introduction(health,currentRoom);
+        this.name = "default";
+        Introduction welcome = new Introduction(player,currentRoom);
 
         welcome.shout();
 
@@ -40,5 +43,23 @@ public class Starter {
 
     public Room getCurrentRoom(){
         return currentRoom;
+    }
+
+    public Inventory getPlayerInventory(){ return inventory;}
+
+    public Player getPlayer(){
+        return player;
+    }
+
+    public void changeName(String nam){
+        this.name = nam;
+    }
+
+    public String getName(){
+        return this.name;
+    }
+
+    public ArrayList<Starter> getListOfSave(){
+        return listOfSave;
     }
 }

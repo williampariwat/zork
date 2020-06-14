@@ -2,23 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a727ee5-05d7-44da-879b-fd8e3b97c5b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Health/HealthFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Starter/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Map/LoadMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Map/LoadMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Map/mapReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Map/mapReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Items/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Items/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Items/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Items/Items.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Monsters/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Monsters/Monster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Player/FoodBar.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Player/Health.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player/PlayerHealth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Player/PlayerHealth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Room/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Room/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Starter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Starter/Starter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Starter/Starter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Starter/Starter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/AttackCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/AttackCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/AutoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/AutoCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/command/CommandFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/CommandFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/DropCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/DropCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/command/GoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/GoCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/HelpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/HelpCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/InfoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/InfoCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/command/Introduction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/Introduction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/LoadCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/LoadCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/MapCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/MapCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/PlayCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/PlayCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/RegameCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/RegameCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/SaveCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/SaveCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/command/TakeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/TakeCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/command/getterCommand.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +47,10 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../zuul/build.gradle" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../zuul" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -100,7 +106,8 @@
       <workItem from="1590913320829" duration="16000" />
       <workItem from="1590913359471" duration="5916000" />
       <workItem from="1591800541119" duration="147000" />
-      <workItem from="1591885280751" duration="9671000" />
+      <workItem from="1591885280751" duration="20102000" />
+      <workItem from="1592142092036" duration="9812000" />
     </task>
     <servers />
   </component>

@@ -1,13 +1,20 @@
 package Player;
 
-public class PlayerHealth
+import Items.Inventory;
+import Items.Items;
+
+import java.util.ArrayList;
+
+public class Player
 {
     private Hungerlevel hungerLevel;
     private int healthBar;
+    private Inventory inventory;
 
-    public PlayerHealth(){
+    public Player(){
         hungerLevel = new Hungerlevel();
         healthBar = 100;
+        inventory = new Inventory(new ArrayList<Items>());
     }
 
     public Hungerlevel getFoodBar(){
@@ -26,4 +33,5 @@ public class PlayerHealth
     public int getHealthBar(){
         return healthBar;
     }
-}
+
+    }

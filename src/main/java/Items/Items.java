@@ -34,18 +34,22 @@ public class Items {
         return weight;
     }
 
-    public void removeItem(Items item, ArrayList<Items> roomItems){
-        for(int i = 0; i < roomItems.size(); i++){
-            if(roomItems.get(i).equals(item))
-                roomItems.remove(i);
-        }
-    }
+//    public void removeItem(Items item, ArrayList<Items> roomItems){
+//        for(int i = 0; i < roomItems.size(); i++){
+//            if(roomItems.get(i).equals(item))
+//                roomItems.remove(i);
+//        }
+//    }
 
     public boolean isItem(String aString){
         if(aString.equals(itemName))
             return true;
         else
             return false;
+    }
+
+    public boolean isWeapon(){
+        return isWeapon;
     }
 
     public Items stringToItem(String aString){
@@ -56,6 +60,7 @@ public class Items {
             item = new Items(aString, itemType, weight);
             return item;
         }
+
     }
 
 

@@ -87,12 +87,29 @@ public class Room {
         this.roomName = roomName;
     }
 
-    public void getItems(){
+    public void getRoomInventory(){
         System.out.println("In this room, you found....");
-        System.out.println(this.itemList.toString());
+        System.out.println(itemList.toString());
+    }
+
+    public ArrayList<Items> getArrayInventory(){
+        return itemList;
+    }
+
+    public void getMonsters() {
+        if (!this.monstersList.isEmpty()) {
+            System.out.println("!!!!!!!!!!!");
+            System.out.println("There is a monster in this room !");
+            System.out.println(this.monstersList.toString());
+        }
+    }
+
+    public ArrayList<Monster> getMonstersList(){
+        return monstersList;
     }
 
     public String getDescription(){
+
         return description;
     }
 
@@ -100,9 +117,7 @@ public class Room {
         this.description = description;
     }
 
-    public ArrayList<Items> getRoomInventory(){
-        return itemList;
-    }
+
 
     public void setRoomInventory(String[] items){
         List<String> stringItems = Arrays.asList(items);

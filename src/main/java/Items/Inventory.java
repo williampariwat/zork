@@ -42,8 +42,33 @@ public class Inventory {
         }
     }
 
+
+
     public int numItems(){
         return inventory.size();
+    }
+
+    public int getAttackPower(){
+        double power = 0;
+        for(int i = 0; i < inventory.size();i++){
+            if(inventory.get(i).isWeapon()){
+                power = power + inventory.get(i).getWeight();
+            }
+        }
+        return (int) power;
+    }
+
+    public ArrayList<Items> getList(){
+        return inventory;
+    }
+
+    public boolean containsWeapon(){
+        for(int i = 0; i < inventory.size(); i++){
+            if(inventory.get(i).isWeapon()){
+                return true;
+            }
+        }
+        return false;
     }
 
 

@@ -1,5 +1,9 @@
 package command;
 
-public class AutoCommand
+public class AutoCommand implements Command
 {
+    @Override
+    public void execute(String s) {
+
+    }
 }
