@@ -24,7 +24,7 @@ public class LoadMap {
 
         String filePath = scanner.nextLine();
 
-        System.out.println("Please enter the stating location of this map: ");
+        System.out.println("Please enter the starting location of this map: ");
 
         String start = scanner.nextLine();
         try{

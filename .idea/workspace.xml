@@ -2,18 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a727ee5-05d7-44da-879b-fd8e3b97c5b2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Map.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/command/UseCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/command/WinCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Items/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Items/Inventory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Items/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Items/Items.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Map/LoadMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Map/LoadMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Map/mapReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Map/mapReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Monsters/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Monsters/Monster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Player/PlayerHealth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Monsters/MonsterFactory.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Room/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Room/Room.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Starter/Starter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Starter/Starter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/command/AttackCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/AttackCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/command/AutoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/AutoCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/Command.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/command/CommandFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/CommandFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/command/DropCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/DropCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/ExitCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/ExitCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/command/GoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/GoCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/HelpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/HelpCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/command/InfoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/InfoCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/command/Introduction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/Introduction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/command/LoadCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/LoadCommand.java" afterDir="false" />
@@ -22,6 +30,27 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/command/RegameCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/RegameCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/command/SaveCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/SaveCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/command/TakeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/TakeCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Items/Inventory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Items/Inventory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Items/Items.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Items/Items.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Map/LoadMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Map/LoadMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Map/mapReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Map/mapReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Room/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Room/Room.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Starter/Starter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Starter/Starter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/command/AttackCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/command/AttackCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/command/AutoCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/command/AutoCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/command/Command.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/command/Command.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/command/CommandFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/command/CommandFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/command/DropCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/command/DropCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/command/ExitCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/command/ExitCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/command/GoCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/command/GoCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/command/HelpCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/command/HelpCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/command/InfoCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/command/InfoCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/command/Introduction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/command/Introduction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/command/LoadCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/command/LoadCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/command/PlayCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/command/PlayCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/command/RegameCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/command/RegameCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/command/SaveCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/command/SaveCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/command/TakeCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/command/TakeCommand.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,13 +71,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1cM3EA90RFohGcUlPxK6GizvqFj" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../zuul" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -107,7 +139,7 @@
       <workItem from="1590913359471" duration="5916000" />
       <workItem from="1591800541119" duration="147000" />
       <workItem from="1591885280751" duration="20102000" />
-      <workItem from="1592142092036" duration="9812000" />
+      <workItem from="1592142092036" duration="42810000" />
     </task>
     <servers />
   </component>
@@ -126,5 +158,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

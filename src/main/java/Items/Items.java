@@ -7,19 +7,19 @@ public class Items {
     private double weight;
     private String itemType;
     private boolean isWeapon;
+    private boolean isToken;
     private boolean isMedicine;
-//    private boolean isFood;
 
 
-    public Items(String itemName, String itemType, double weight){
+    public Items(String itemName, String itemType, int weight){
         super();
         this.itemName = itemName;
         this.itemType = itemType;
         this.weight = weight;
 
         isWeapon = itemType.equals("weapon");
-        isMedicine =  itemType.equals("medicine");
-
+        isMedicine =  itemType.equals("potion");
+        isToken = itemType.equals("token");
     }
 
     public String getItemName(){
@@ -52,7 +52,8 @@ public class Items {
         return isWeapon;
     }
 
-    public Items stringToItem(String aString){
+    public Items stringToItem(String aString , String itemType, int weight){
+//        System.out.println(aString + itemType + String.valueOf(weight));
         Items item;
         if(!isItem(aString)){
             return null;
@@ -62,9 +63,5 @@ public class Items {
         }
 
     }
-
-
-
-
 
 }

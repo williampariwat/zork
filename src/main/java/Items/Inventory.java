@@ -5,6 +5,15 @@ import java.util.ArrayList;
 public class Inventory {
     private ArrayList<Items> inventory;
     private Items item;
+    private int tokenCount = 0;
+
+    public Inventory(){
+        for(int i = 0; i < inventory.size(); i++){
+            if(inventory.get(i).getItemName().split(" ")[1].equals("Shell")){
+                tokenCount++;
+            }
+        }
+    }
 
     public Inventory(ArrayList<Items> inventory) {
         this.inventory = inventory;
@@ -42,12 +51,6 @@ public class Inventory {
         }
     }
 
-
-
-    public int numItems(){
-        return inventory.size();
-    }
-
     public int getAttackPower(){
         double power = 0;
         for(int i = 0; i < inventory.size();i++){
@@ -69,6 +72,10 @@ public class Inventory {
             }
         }
         return false;
+    }
+
+    public int totalToken(){
+        return tokenCount;
     }
 
 

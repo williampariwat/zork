@@ -1,18 +1,18 @@
 package command;
 
 import Items.Items;
+import Player.Player;
+import Room.Room;
 import Starter.Starter;
 import Items.Inventory;
 
 import java.util.ArrayList;
 
 public class DropCommand implements Command {
-    private Starter starter;
-    private ArrayList<Items> roomInventory = starter.getCurrentRoom().getArrayInventory();
-    private ArrayList<Items> playerInventory = starter.getPlayerInventory().getList();
 
-    public void execute(String s) {
-
+    public void execute(String s, Room room, Player player, Inventory inventory, ArrayList<Starter> listOfSave) {
+        ArrayList<Items> roomInventory = room.getArrayInventory();
+        ArrayList<Items> playerInventory = inventory.getList();
         if (s.isEmpty()) {
             System.out.println("Drop what?");
         } else {

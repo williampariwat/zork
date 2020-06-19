@@ -37,8 +37,6 @@ public class Room {
             case 'W': dir = "west"; break;
             case 'S': dir = "south"; break;
             case 'N': dir = "north"; break;
-            case 'U': dir = "up"; break;
-            case 'D': dir = "down";break;
             default: throw new Exception("Invalid Direction");
         }
 
@@ -46,7 +44,7 @@ public class Room {
     }
 
 
-    public void setExits(Room north, Room east, Room south, Room west, Room up, Room down){
+    public void setExits(Room north, Room east, Room south, Room west){
         if(north != null)
             exits.put("north",north);
         if(east != null)
@@ -55,10 +53,6 @@ public class Room {
             exits.put("south",south);
         if(west != null)
             exits.put("west",west);
-        if(up != null)
-            exits.put("up",up);
-        if(down != null)
-            exits.put("down",down);
     }
 
     public String exitString(){
@@ -80,7 +74,7 @@ public class Room {
     }
 
     public Room nextRoom(String direction){
-        return exits.get(direction);
+        return (Room) exits.get(direction);
     }
 
     public void setRoomName(String roomName){
@@ -88,8 +82,12 @@ public class Room {
     }
 
     public void getRoomInventory(){
-        System.out.println("In this room, you found....");
-        System.out.println(itemList.toString());
+        if(!itemList.isEmpty()) {
+            System.out.println("In this room, you found....");
+            System.out.println(itemList.get(0).getItemName());
+        }else{
+            System.out.println("Nothing is in this room ");
+        }
     }
 
     public ArrayList<Items> getArrayInventory(){
@@ -97,10 +95,10 @@ public class Room {
     }
 
     public void getMonsters() {
-        if (!this.monstersList.isEmpty()) {
+        if (!this.monstersList.get(0).equals("None")) {
             System.out.println("!!!!!!!!!!!");
             System.out.println("There is a monster in this room !");
-            System.out.println(this.monstersList.toString());
+            System.out.println(this.monstersList.get(0).getMonsterName());
         }
     }
 
@@ -120,28 +118,19 @@ public class Room {
 
 
     public void setRoomInventory(String[] items){
-        List<String> stringItems = Arrays.asList(items);
-        ArrayList<Items> realList = new ArrayList<Items>(stringItems.size());
-        for(int i = 0; i < realList.size();i++){
-            if(stringItems.get(i).equals("none")){
-                i++;
-            }else{
-                realList.add(item.stringToItem(stringItems.get(i)));
-            }
-        }
+
+        ArrayList<Items> realList = new ArrayList<Items>(items.length);
+        Items temp = new Items(items[0].trim(),items[1].trim(),Integer.valueOf(items[2].trim()));
+        realList.add(temp);
         this.itemList = realList;
+
     }
 
+
     public void setRoomMonster(String[] monsters){
-        List<String> stringMonsters = Arrays.asList(monsters);
-        ArrayList<Monster> realList = new ArrayList<Monster>(stringMonsters.size());
-        for(int i = 0; i < realList.size(); i++){
-            if(stringMonsters.get(i).equals("none")){
-                i++;
-            }else{
-                realList.add(monster.stringToMonster(stringMonsters.get(i)));
-            }
-        }
+        ArrayList<Monster> realList = new ArrayList<Monster>(monsters.length);
+        Monster temp = new Monster(monsters[0].trim(),Integer.valueOf(monsters[1].trim()),Integer.valueOf(monsters[2].trim()));
+        realList.add(temp);
         this.monstersList = realList;
     }
 

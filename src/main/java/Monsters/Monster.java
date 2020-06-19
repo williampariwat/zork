@@ -17,8 +17,9 @@ public class Monster {
     }
 
     public String getMonsterName(){ return monsterName; }
-
     public int getAttackDamage(){return attackDamage; }
+    public int getHealthBar(){ return this.healthBar; }
+
 
     public void removeMonster(Monster monster, ArrayList<Monster> allMonsters){
         for(int i = 0; i < allMonsters.size(); i++){
@@ -53,6 +54,7 @@ public class Monster {
     public boolean isDead(){
         return this.healthBar < 100;
     }
+
 
 
 

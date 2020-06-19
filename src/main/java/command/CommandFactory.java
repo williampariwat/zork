@@ -12,13 +12,13 @@ public class CommandFactory {
     static{
 //        commandMap.put("quit", new RegameCommand());
         commandMap.put("info", new InfoCommand());
-//        commandMap.put("take", new TakeCommand());
-//        commandMap.put("drop", new DropCommand());
-//        commandMap.put("attack with", new AttackCommand());
-//        commandMap.put("go", new GoCommand());
+        commandMap.put("take", new TakeCommand());
+        commandMap.put("drop", new DropCommand());
+        commandMap.put("attack with", new AttackCommand());
+        commandMap.put("go", new GoCommand());
 //        commandMap.put("map", new MapCommand());
 //        commandMap.put("autopilot", new AutoCommand());
-//        commandMap.put("help",new HelpCommand());
+        commandMap.put("help",new HelpCommand());
 //        commandMap.put("play",new PlayCommand());
 //        commandMap.put("load",new LoadCommand());
 //        commandMap.put("save",new SaveCommand());
