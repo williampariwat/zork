@@ -2,17 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a727ee5-05d7-44da-879b-fd8e3b97c5b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Map.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/command/UseCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/command/WinCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MapArt/MapArt.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MapArt/MapArt2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Maps/Map.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Maps/Map2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Items/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Items/Inventory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Items/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Items/Items.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Map/LoadMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Map/LoadMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Map/LoadMap.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Map/mapReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Map/mapReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Monsters/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Monsters/Monster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Monsters/MonsterFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Player/Hungerlevel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Room/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Room/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Starter/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Starter/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Starter/Starter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Starter/Starter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/command/AttackCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/AttackCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/command/AutoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/AutoCommand.java" afterDir="false" />
@@ -30,11 +35,18 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/command/RegameCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/RegameCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/command/SaveCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/SaveCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/command/TakeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/TakeCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/UseCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/UseCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/command/WinCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/command/WinCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Health/HealthFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Health/HealthFactory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Items/Inventory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Items/Inventory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Items/Items.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Items/Items.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Map/LoadMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Map/LoadMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Map/LoadMap.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Map/mapReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Map/mapReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Monsters/Monster.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Monsters/Monster.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Player/Hungerlevel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Player/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Player/Player.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Room/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Room/Room.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Starter/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Starter/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Starter/Starter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Starter/Starter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/command/AttackCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/command/AttackCommand.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/command/AutoCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/command/AutoCommand.class" afterDir="false" />
@@ -47,10 +59,13 @@
       <change beforePath="$PROJECT_DIR$/target/classes/command/InfoCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/command/InfoCommand.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/command/Introduction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/command/Introduction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/command/LoadCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/command/LoadCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/command/MapCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/command/MapCommand.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/command/PlayCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/command/PlayCommand.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/command/RegameCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/command/RegameCommand.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/command/SaveCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/command/SaveCommand.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/command/TakeCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/command/TakeCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/command/UseCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/command/UseCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/command/WinCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/command/WinCommand.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,6 +85,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1cM3EA90RFohGcUlPxK6GizvqFj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -79,11 +101,12 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../zuul" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../readline" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -139,7 +162,11 @@
       <workItem from="1590913359471" duration="5916000" />
       <workItem from="1591800541119" duration="147000" />
       <workItem from="1591885280751" duration="20102000" />
-      <workItem from="1592142092036" duration="42810000" />
+      <workItem from="1592142092036" duration="53646000" />
+      <workItem from="1592747324649" duration="13130000" />
+      <workItem from="1592914052908" duration="26477000" />
+      <workItem from="1593111051131" duration="1245000" />
+      <workItem from="1593181866122" duration="9403000" />
     </task>
     <servers />
   </component>

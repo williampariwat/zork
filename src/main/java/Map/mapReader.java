@@ -11,10 +11,12 @@ import java.util.Scanner;
 public class mapReader {
 
     String fileName;
+    String num;
     private HashMap<String, Room> roomMap = new HashMap<String, Room>();
 
-    public mapReader(String fileName) {
+    public mapReader(String fileName, String num) {
         this.fileName = fileName;
+        this.num = num;
     }
 
     public void mapInitializer() {
@@ -86,7 +88,13 @@ public class mapReader {
     }
 
     public Room getRoomMap(String room) {
-        return roomMap.get(room);
+        return this.roomMap.get(room);
 
     }
+
+    public String getMapNum(){
+        return this.num;
+    }
+
+
 }

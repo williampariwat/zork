@@ -1,0 +1,50 @@
+Room Name: Bathroom
+Room Description: You are inside of a BATHROOM. You see scratches on the wall. There is a seashell on the floor.
+Exit Rooms: S-Seal Hole, E-Dolphin's Land
+Item: Conch-Shell , token, 0
+Monster: None, 0 , 0
+Room Name: Seal Hole
+Room Description: You are in the SEAL HOLE. There are lots of seal staring at you hungrily...
+Exit Rooms: N-Bathroom, E-Whale Hall
+Item: Cockle-Shell , token, 0
+Monster: Sealord, 20, 100
+Room Name: Dolphin's Land
+Room Description: You are at DOLPHIN's LAND. Look carefully, there are something hiding in this room...
+Exit Rooms: N-Shrimp Pool, E-Plankton Lab, S-Whale Hall, W-Bathroom
+Item: Axe, weapon, 40
+Monster: Dolphino, 10, 150
+Room Name: Whale Hall
+Room Description: You are in the WHALE HALL. You may be able to find potion somewhere around here.
+Exit Rooms: N-Dolphin's Land, W-Seal Hole
+Item: Potion, healer, 50
+Monster: None, 0 , 0
+Room Name: Plankton Lab
+Room Description: There is a large pile of chemicals in the area in front of you. There is broken glasses on the floor. There are some blood splashed on the wall...
+Exit Rooms: N-Staff Room, W-Dolphin's Land
+Item: Olive-Shell, token, 0
+Monster: Planktos, 40,60
+Room Name: Staff Room
+Room Description: You are inside of a STAFF ROOM and there are markings on the wall to your left. There is a corpse holding a spear on the floor. Suddenly it wakes up!
+Exit Rooms: S-Plankton Lab, W-Operating Room
+Item: Korn-Shell, token, 0
+Monster: Zombie, 5, 140
+Room Name: Shrimp Pool
+Room Description: You are in a SHRIMP POOL surrounded by many types of shrimps. Maybe there's some food nearby...
+Exit Rooms: N-Operating Room, S-Dolphin's Land, W-Starfish Pond
+Item:Chicken-Wings, healer, 100
+Monster: None, 0 , 0
+Room Name: Operating Room
+Room Description: You find yourself inside an OPERATING ROOM surrounded by dead police. There is a gun on the corpse.
+Exit Rooms: E-Staff Room, S-Shrimp Pool
+Item: Gun, weapon, 60
+Monster: None, 0 ,0
+Room Name: Starfish Pond
+Room Description: There is a big starfish coming towards you.
+Exit Rooms: N-Shark Room, E-Shrimp Pool
+Item: Ceriths-Shell, token , 0
+Monster: Nova,50,80
+Room Name: Shark Room
+Room Description: You are inside a SHARK ROOM. It seems like someone has been here before because there are blood on the floor. In this room, you will meet the final boss of this map. Kill the boss and win the game.
+Exit Rooms: S-Starfish Pond
+Item: Junonia-Shell, token, 0
+Monster: Sharknado,70,200

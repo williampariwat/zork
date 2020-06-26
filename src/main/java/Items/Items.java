@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Items {
     private String itemName;
-    private double weight;
+    private int weight;
     private String itemType;
     private boolean isWeapon;
     private boolean isToken;
@@ -18,20 +18,20 @@ public class Items {
         this.weight = weight;
 
         isWeapon = itemType.equals("weapon");
-        isMedicine =  itemType.equals("potion");
+        isMedicine =  itemType.equals("healer");
         isToken = itemType.equals("token");
     }
 
     public String getItemName(){
-        return itemName;
+        return this.itemName;
     }
 
     public String getItemType(){
         return itemType;
     }
 
-    public double getWeight(){
-        return weight;
+    public int getWeight(){
+        return (int) this.weight;
     }
 
 //    public void removeItem(Items item, ArrayList<Items> roomItems){
@@ -49,8 +49,10 @@ public class Items {
     }
 
     public boolean isWeapon(){
-        return isWeapon;
+        return this.isWeapon;
     }
+
+    public boolean isMedicine() { return this.isMedicine; }
 
     public Items stringToItem(String aString , String itemType, int weight){
 //        System.out.println(aString + itemType + String.valueOf(weight));
@@ -63,5 +65,6 @@ public class Items {
         }
 
     }
+
 
 }

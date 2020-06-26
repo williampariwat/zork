@@ -1,6 +1,7 @@
 package Monsters;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Monster {
 
@@ -8,6 +9,7 @@ public class Monster {
     private int healthBar;
     private int attackDamage;
     private String monsterName;
+    private Random r = new Random();
 
 
     public Monster(String monsterName, int attackDamage, int HP){
@@ -17,7 +19,17 @@ public class Monster {
     }
 
     public String getMonsterName(){ return monsterName; }
-    public int getAttackDamage(){return attackDamage; }
+
+    public int getAttackDamage(){
+        return this.attackDamage;
+    }
+
+    public int getRandomizedAttackDamage(){
+        int low = 5;
+        int high = attackDamage + 1;
+
+        return r.nextInt(high-low)+low;
+    }
     public int getHealthBar(){ return this.healthBar; }
 
 
@@ -37,7 +49,7 @@ public class Monster {
         }
     }
     public void attacked(int damage){
-        healthBar = healthBar - damage;
+        this.healthBar = this.healthBar - damage;
     }
 
 
@@ -52,7 +64,11 @@ public class Monster {
     }
 
     public boolean isDead(){
-        return this.healthBar < 100;
+        return (this.healthBar <= 0);
+    }
+
+    public boolean noMonster(){
+        return this.monsterName.equals("None");
     }
 
 

@@ -1,0 +1,50 @@
+Room Name: Bathroom
+Room Description: You are inside of a BATHROOM. You see scratches on the wall. There is a seashell on the floor.
+Exit Rooms: N-JellyFish Box, E-Stingray Bay, S-Infirmary Room, W-SeaUrchin Bin
+Item: Conch-Shell , token, 0
+Monster: None, 0 , 0
+Room Name: Infirmary Room
+Room Description: You are in the INFIRMARY ROOM. There are lots of medical materials on the floor...
+Exit Rooms: N-Bathroom, E-Cafeteria
+Item: Cockle-Shell , token, 0
+Monster: Witch, 20, 100
+Room Name: SeaUrchin Bin
+Room Description: You are at SEA-URCHIN BIN. Look carefully, there are something hiding in this room...
+Exit Rooms: E-Bathroom
+Item: Axe, weapon, 40
+Monster: Dolphino, 10, 150
+Room Name: JellyFish Box
+Room Description: You are in the JELLYFISH BOX. You may be able to find potion somewhere around here.
+Exit Rooms: S-Bathroom
+Item: Potion, healer, 50
+Monster: None, 0 , 0
+Room Name: Stingray Bay
+Room Description: There is a large pile of chemicals in the area in front of you. There is broken glasses and dead stingrays on the floor. There are some blood splashed on the wall...
+Exit Rooms: N-Kid's Zone, E-Octopus Pub, W-Bathroom
+Item: Olive-Shell, token, 0
+Monster: Stinger, 40,60
+Room Name: Kid's Zone
+Room Description: You are inside of a KID's ZONE and there are markings on the wall to your left. There is a corpse holding a spear on the floor. Suddenly it wakes up!
+Exit Rooms: S-Stingray Bay
+Item: Korn-Shell, token, 0
+Monster: Mini-Zombie, 5, 140
+Room Name: Octopus Pub
+Room Description: You are in an OCTOPUS PUB surrounded by many types of octopi. Maybe there's some food nearby...
+Exit Rooms: S-Marine Incubator, W-Stingray Bay
+Item:Takoyaki, healer, 100
+Monster: None, 0 , 0
+Room Name: Marine Incubator
+Room Description: You find yourself inside a MARINE INCUBATOR surrounded by fish eggs. There is a gun beside one of the offspring.
+Exit Rooms: N-Octopus Pub, S-Shark Room, W-Cafeteria
+Item: Gun, weapon, 60
+Monster: Baby-Shark, 30 ,40
+Room Name: Cafeteria
+Room Description: You are inside a CAFETERIA.
+Exit Rooms: E-Marine Incubator, W-Infirmary Room
+Item: Ceriths-Shell, token , 0
+Monster: Seaweedman,50,80
+Room Name: Shark Room
+Room Description: You are inside a SHARK ROOM. It seems like someone has been here before because there are blood on the floor. In this room, you will meet the final boss of this map. Kill the boss and win the game.
+Exit Rooms: N-Marine Incubator
+Item: Junonia-Shell, token, 0
+Monster: Sharknado,70,200

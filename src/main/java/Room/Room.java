@@ -84,22 +84,26 @@ public class Room {
     public void getRoomInventory(){
         if(!itemList.isEmpty()) {
             System.out.println("In this room, you found....");
-            System.out.println(itemList.get(0).getItemName());
+            System.out.println("  -> "+itemList.get(0).getItemName());
         }else{
             System.out.println("Nothing is in this room ");
         }
     }
 
     public ArrayList<Items> getArrayInventory(){
-        return itemList;
+        return this.itemList;
     }
 
-    public void getMonsters() {
-        if (!this.monstersList.get(0).equals("None")) {
+    public void getMonstersDialogue() {
+        if (!this.monstersList.get(0).getMonsterName().equals("None")) {
             System.out.println("!!!!!!!!!!!");
             System.out.println("There is a monster in this room !");
             System.out.println(this.monstersList.get(0).getMonsterName());
         }
+    }
+
+    public Monster getMonster(){
+        return this.monstersList.get(0);
     }
 
     public ArrayList<Monster> getMonstersList(){
@@ -109,6 +113,10 @@ public class Room {
     public String getDescription(){
 
         return description;
+    }
+
+    public String getRoomName(){
+        return this.roomName;
     }
 
     public void setDescription(String description){
@@ -133,6 +141,11 @@ public class Room {
         realList.add(temp);
         this.monstersList = realList;
     }
+
+    public boolean isInside(String item){
+        return(this.itemList.get(0).getItemName().equals(item));
+    }
+
 
 
 

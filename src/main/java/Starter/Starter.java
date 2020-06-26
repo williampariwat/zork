@@ -9,64 +9,94 @@ import command.Command;
 import command.CommandFactory;
 import command.Introduction;
 
+import java.io.FileNotFoundException;
+import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.Map;
 import java.util.Scanner;
 
-public class Starter {
-    public Items item;
-    private mapReader mapReader;
+public class Starter implements Serializable {
+    public Items fist;
     public Room currentRoom;
     public Player player = new Player();
     public Inventory inventory = new Inventory(new ArrayList<Items>()); //FIx this
     private String name;
-    private ArrayList<Starter> listOfSave = new ArrayList<Starter>();
+    private mapReader map;
+    private boolean isPlaying = false;
 
+    public void setStarter( Room currentRoom, Player player, Inventory inventory, boolean startStatus, mapReader map){
+        this.currentRoom = currentRoom;
+        this.player = player;
+        this.inventory = inventory;
+        this.isPlaying = startStatus;
+        this.map = map;
+    }
 
-    public void Starter(){
-        mapReader = new mapReader("/Users/wiliamh/Desktop/Work/Sophomore Year/Term III/Software Construction/Zork/Map.txt");
-        mapReader.mapInitializer();
+    public void Starter() throws FileNotFoundException {
         Scanner scanner = new Scanner(System.in);
         String cmd = "";
-        currentRoom = mapReader.getRoomMap("BATHROOM");
-        Introduction welcome = new Introduction(player,currentRoom);
-        welcome.shout();
+        fist = new Items("fist","weapon",5);
+        inventory.addItem(fist);
+        Introduction welcome = new Introduction(this.player,this.currentRoom,this.inventory);
+        welcome.intro();
 
         while(true){
+
             System.out.print("> ");
+
             cmd = scanner.nextLine();
             String[] words = cmd.split(" ");
 
             Command command = CommandFactory.getCommand(words[0]);
 
-            if (command != null){
-                command.execute(words.length == 1 ? null : words[1], currentRoom, player,inventory,listOfSave);
-                //update room and all the stuff 
+            if(command != null && !isPlaying && !command.inGameCommand()){
+                command.execute(words.length == 1 ? null : words[1], currentRoom, player,inventory, isPlaying,map);
+                this.currentRoom = command.getUpdatedRoom();
+                this.player =command.getUpdatedPlayer();
+                this.inventory = command.getUpdatedInventory();
+                this.isPlaying = command.getStartStatus();
+                this.map = command.getMapTracker();
+            }
+
+            else if (command != null && isPlaying && command.inGameCommand()){
+
+                command.execute(words.length == 1 ? null : words[1], currentRoom, player,inventory, isPlaying,map);
+                this.currentRoom = command.getUpdatedRoom();
+                this.player = command.getUpdatedPlayer();
+                this.inventory = command.getUpdatedInventory();
+                this.isPlaying = command.getStartStatus();
+                this.map = command.getMapTracker();
+
+
+            }else if (command != null && !isPlaying){
+                System.out.println("Please pick a map before starting to type other command.");
+            }else if(command != null && !command.inGameCommand() && isPlaying){
+                System.out.println("The game is already started.");
+            }else {
+                System.out.println("Invalid command. Please try again.");
             }
         }
     }
-//put everything in execute command.
     public Room getCurrentRoom(){
-        return currentRoom;
+        return this.currentRoom;
     }
 
-    public Inventory getPlayerInventory(){ return inventory;}
+    public Inventory getPlayerInventory(){ return this.inventory;}
 
     public Player getPlayer(){
         return player;
     }
 
-    public void changeName(String nam){
-        this.name = nam;
+
+    public mapReader getMap(){
+        return this.map;
     }
 
-    public String getName(){
-        return this.name;
+
+    public boolean getGameStatus(){
+        return this.isPlaying;
     }
 
-    public ArrayList<Starter> getListOfSave(){
-        return listOfSave;
-    }
+
 
 
 }

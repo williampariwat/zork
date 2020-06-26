@@ -5,23 +5,27 @@ import java.util.ArrayList;
 public class Inventory {
     private ArrayList<Items> inventory;
     private Items item;
-    private int tokenCount = 0;
+    private int tokenCount = 1;
+    private int MaxInventory = 7;
 
-    public Inventory(){
-        for(int i = 0; i < inventory.size(); i++){
-            if(inventory.get(i).getItemName().split(" ")[1].equals("Shell")){
-                tokenCount++;
-            }
-        }
-    }
+
 
     public Inventory(ArrayList<Items> inventory) {
         this.inventory = inventory;
     }
 
-    public boolean isInside(Items anItem) {
+    public Inventory(){
+        for(int i = 0; i < inventory.size(); i++){
+            if(this.inventory.get(i).getItemName().split(" ")[1].equals("Shell")){
+                tokenCount++;
+            }
+        }
+    }
+
+
+    public boolean isInside(String anItem) {
         for (int i = 0; i < inventory.size(); i++) {
-            if (inventory.get(i).equals(anItem)) {
+            if (this.inventory.get(i).getItemName().equals(anItem)) {
                 return true;
             }
         }
@@ -32,13 +36,14 @@ public class Inventory {
         inventory.add(item);
     }
 
-    public void removeItem(Items item){
+    public void removeItem(String item){
         for(int i = 0; i < inventory.size(); i++){
-            if(item.getItemName().equals(inventory.get(i).getItemName()) && item.getItemType().equals(inventory.get(i).getItemType())){
-                inventory.remove(i);
+            if(inventory.get(i).getItemName().equals(item)){
+                this.inventory.remove(i);
             }
         }
     }
+
 
     public void printInventory(){
         if(inventory.size() == 0){
@@ -46,28 +51,41 @@ public class Inventory {
         }else{
 
             for(int i = 0; i< inventory.size(); i++){
-                System.out.println(inventory.get(i).toString());
+                System.out.println("  -> "+inventory.get(i).getItemName());
             }
         }
     }
 
+    public int getSize(){
+        return this.inventory.size();
+    }
+
+    public Items getItem(String item){
+        for(int i = 0; i < inventory.size();i++ ) {
+            if (inventory.get(i).getItemName().equals(item)) {
+                return inventory.get(i);
+            }
+        }
+        return null;
+    }
+
     public int getAttackPower(){
-        double power = 0;
+        int power = 0;
         for(int i = 0; i < inventory.size();i++){
             if(inventory.get(i).isWeapon()){
                 power = power + inventory.get(i).getWeight();
             }
         }
-        return (int) power;
+        return power;
     }
 
     public ArrayList<Items> getList(){
-        return inventory;
+        return this.inventory;
     }
 
     public boolean containsWeapon(){
         for(int i = 0; i < inventory.size(); i++){
-            if(inventory.get(i).isWeapon()){
+            if(this.inventory.get(i).isWeapon()){
                 return true;
             }
         }
@@ -78,5 +96,7 @@ public class Inventory {
         return tokenCount;
     }
 
-
+    public boolean isFull(){
+        return getSize() >= MaxInventory;
+    }
 }
