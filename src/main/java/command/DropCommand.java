@@ -39,7 +39,7 @@ public class DropCommand implements Command {
                 System.out.println("You died from losing too much blood");
                 System.out.println("Game over");
                 Command command = CommandFactory.getCommand("quit");
-                command.execute(null,this.currentRoom,this.playerStatus,this.currentInventory,startStatus,mapTracker);
+                command.execute(null,this.currentRoom,this.playerStatus,this.currentInventory,false,mapTracker);
                 //Find some way to replay the game;
             }
             else {

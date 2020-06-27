@@ -1,6 +1,7 @@
 package command;
 
 import Items.Inventory;
+import Items.Items;
 import Map.mapReader;
 import Player.Player;
 import Room.Room;
@@ -19,12 +20,14 @@ public class RegameCommand implements Command {
     @Override
     public void execute(String s, Room currentRoom, Player player, Inventory inventory, boolean startStatus, mapReader mapTracker) throws FileNotFoundException {
         if(s == null){
+            System.out.println("Game Over");
             this.startStatus = false;
+            this.playerStatus = new Player();
+            this.currentInventory = new Inventory(new ArrayList<Items>());
 
-
-
+            System.out.println("System is redirecting to the game menu....");
             Command command = CommandFactory.getCommand("play");
-            command.execute(null,this.currentRoom,this.playerStatus,this.currentInventory,this.startStatus,this.mapTracker);
+            command.execute(null,currentRoom,this.playerStatus,this.currentInventory,this.startStatus,mapTracker);
         }else{
             System.out.println("This command does not require user to enter second argument.");
             this.mapTracker = mapTracker;
