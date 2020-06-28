@@ -1,0 +1,8 @@
+play 1
+go east
+go north
+go north
+take Gun
+go south
+go south
+
